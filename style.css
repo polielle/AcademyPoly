@@ -1,4 +1,4 @@
-/* Estilos globais */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@
   /* Hero */
   .hero {
     height: 100vh;
-    background: url("https://images.unsplash.com/photo-1518611012118-696072aa579a") no-repeat center center/cover;
+    background: linear-gradient(135deg, #0d0d0d 60%, #1a001f 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,7 +65,7 @@
   }
   
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   
   .hero-content span {
@@ -74,20 +74,24 @@
   
   .hero-content p {
     margin: 15px 0;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .btn {
     display: inline-block;
     background: #a020f0;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 30px;
     text-decoration: none;
-    transition: 0.3s;
+    transition: all 0.3s ease;
   }
   
   .btn:hover {
     background: #7b16b8;
+    transform: scale(1.05);
   }
   
   /* Planos */
@@ -106,14 +110,21 @@
   
   .card {
     background: #1a1a1a;
-    padding: 30px;
+    padding: 20px;
     border-radius: 12px;
     width: 280px;
-    transition: 0.3s;
+    transition: all 0.4s ease;
+    opacity: 0; /* animação */
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
   
   .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-8px) scale(1.02);
   }
   
   .card h3 {
@@ -134,8 +145,32 @@
   /* Sobre */
   .sobre {
     padding: 80px 20px;
-    text-align: center;
     background: #111;
+  }
+  
+  .sobre-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .sobre-texto {
+    flex: 1;
+    min-width: 280px;
+  }
+  
+  .sobre-imgs {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .sobre-imgs img {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    opacity: 0; /* animação */
   }
   
   /* Contato */
@@ -144,6 +179,7 @@
     text-align: center;
   }
   
+  /* Form */
   form {
     max-width: 500px;
     margin: auto;
@@ -156,6 +192,7 @@
     padding: 12px;
     border: none;
     border-radius: 8px;
+    outline: none;
   }
   
   form button {
@@ -170,5 +207,18 @@
     padding: 20px;
     margin-top: 40px;
     font-size: 0.9rem;
+    opacity: 0; /* animação */
+  }
+  
+  /* ==== Animações Fade-In ==== */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+  }
+  
+  .fade-in.aparecer {
+    opacity: 1;
+    transform: translateY(0);
   }
   
