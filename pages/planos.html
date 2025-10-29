@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Planos — Poly Academy</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+  <header class="nav-wrapper">
+    <div class="container nav">
+      <div class="brand">Poly <span>Academy</span></div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">Sobre</a>
+        <a href="planos.html" class="active">Planos</a>
+        <a href="aulas.html">Aulas</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container fade-in">
+      <h1>Planos</h1>
+      <p>Escolha o plano que combina com seu ritmo e objetivos.</p>
+      <div class="planos-grid">
+        <article class="card plan-card">
+          <img data-src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Básico" class="lazy">
+          <h3>Básico</h3>
+          <p>R$79,90 / mês — Acesso livre.</p>
+          <ul>
+            <li>Acesso à academia</li>
+            <li>Vestiários</li>
+            <li>Wi-fi</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn" data-plan="Básico">Assinar</button>
+            <button class="btn ghost" data-modal="details-basico">Detalhes</button>
+          </div>
+        </article>
+
+        <article class="card plan-card destaque">
+          <img data-src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba" alt="Premium" class="lazy">
+          <h3>Premium</h3>
+          <p>R$129,90 / mês — Aulas + Treinador.</p>
+          <ul>
+            <li>Aulas ilimitadas</li>
+            <li>1 avaliação mensal</li>
+            <li>Acesso à área VIP</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn" data-plan="Premium">Assinar</button>
+            <button class="btn ghost" data-modal="details-premium">Detalhes</button>
+          </div>
+        </article>
+
+        <article class="card plan-card">
+          <img data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="VIP" class="lazy">
+          <h3>VIP</h3>
+          <p>R$199,90 / mês — Treino completo + Nutri.</p>
+          <ul>
+            <li>Nutricionista</li>
+            <li>Treinos individuais</li>
+            <li>Descontos parceiros</li>
+          </ul>
+          <div class="card-actions">
+            <button class="btn" data-plan="VIP">Assinar</button>
+            <button class="btn ghost" data-modal="details-vip">Detalhes</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Modals detalhes -->
+    <div id="modal" class="modal hidden" aria-hidden="true">
+      <div class="modal-content">
+        <button class="modal-close" aria-label="Fechar">&times;</button>
+        <div id="modalBody"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container"> <small>&copy; 2025 Poly Academy</small></div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

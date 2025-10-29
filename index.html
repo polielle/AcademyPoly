@@ -1,114 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Poly Academy</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Poly Academy — Home</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Poly <span>Academy</span></div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#planos">Planos</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+  <header class="nav-wrapper">
+    <div class="container nav">
+      <div class="brand">Poly <span>Academy</span></div>
+      <button id="menuBtn" class="menu-btn" aria-label="Abrir menu"><i class="fa fa-bars"></i></button>
+      <nav id="mainNav" class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="pages/about.html">Sobre</a>
+        <a href="pages/planos.html">Planos</a>
+        <a href="pages/aulas.html">Aulas</a>
+        <a href="pages/contato.html">Contato</a>
+        <a href="#newsletter" class="btn small">Assine</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="hero fade-in">
-    <div class="hero-content">
-      <h1>Treine com a <span>Poly Academy</span></h1>
-      <p>Corpo saudável, mente forte. Vem com a gente transformar sua rotina!</p>
-      <a href="#planos" class="btn">Conheça os Planos</a>
-    </div>
-  </section>
+  <main>
+    <section id="homeHero" class="hero fade-in">
+      <div class="container hero-inner">
+        <h1>Transforme hoje. Treine com a <span>Poly Academy</span></h1>
+        <p>Academia moderna — planos para todos os níveis, treinos guiados, acompanhamento nutricional e aulas ao vivo.</p>
+        <div class="hero-ctas">
+          <a href="pages/planos.html" class="btn big">Ver Planos</a>
+          <a href="pages/aulas.html" class="btn ghost">Ver Aulas</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- Planos -->
-  <!-- Planos -->
-<section id="planos" class="planos fade-in">
-    <h2>Nossos Planos</h2>
-    <div class="planos-container">
-      <div class="card fade-in">
-        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Plano Básico">
-        <h3>Básico</h3>
-        <p>Acesso livre à academia</p>
-        <p class="price">R$ 79,90/mês</p>
-        <a href="#contato" class="btn">Assinar</a>
+    <section id="highlights" class="cards-section container fade-in">
+      <article class="card small">
+        <img data-src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74" alt="Plano Básico" class="lazy">
+        <h3>Planos acessíveis</h3>
+        <p>Opções a partir de R$79,90 com flexibilidade de horários.</p>
+      </article>
+
+      <article class="card small"><center>
+        <img data-src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba" alt="Treinos" class="lazy">
+        <h3>Aulas variadas</h3>
+        <p>Musculação, HIIT, Yoga, Spinning e muito mais.</p>
+    </center></article>
+
+      <article class="card small">
+        <img data-src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Nutrição" class="lazy">
+        <h3>Acompanhamento</h3>
+        <p>Nutrição e treino personalizado para você atingir metas.</p>
+      </article>
+
+      <article class="card small">
+        <img data-src="https://images.unsplash.com/photo-1594737625785-c55dedc1b64c" alt="Espaço" class="lazy">
+        <h3>Ambiente premium</h3>
+        <p>Equipamentos modernos e espaço climatizado.</p>
+      </article>
+    </section>
+
+    <section id="videoPreview" class="container fade-in">
+      <h2>Tour rápido</h2>
+      <div class="video-wrap">
+        <video controls width="720" preload="metadata">
+          <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo.
+        </video>
+        <div class="video-info">
+          <p>Veja um pequeno tour das instalações da Poly Academy.</p>
+        </div>
       </div>
-      <div class="card destaque fade-in">
-        <img src="https://images.unsplash.com/photo-1579758629938-03607ccdbaba" alt="Plano Premium">
-        <h3>Premium</h3>
-        <p>Aulas coletivas + Treinador</p>
-        <p class="price">R$ 129,90/mês</p>
-        <a href="#contato" class="btn">Assinar</a>
+    </section>
+
+    <section id="newsletter" class="container fade-in">
+      <h2>Assine nossa newsletter</h2>
+      <form id="newsletterForm" class="inline-form">
+        <input type="email" id="newsEmail" placeholder="Seu melhor e-mail" required/>
+        <button class="btn" type="submit">Assinar</button>
+      </form>
+      <p class="muted">Receba ofertas e dicas gratuitas.</p>
+    </section>
+
+    <section id="events" class="container fade-in">
+      <h2>Eventos & Workshops</h2>
+      <div class="slider" id="eventsSlider">
+        <div class="slide"><img data-src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87" alt="Evento 1" class="lazy"></div>
+        <div class="slide"><img data-src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2" alt="Evento 2" class="lazy"></div>
+        <div class="slide"><img data-src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef" alt="Evento 3" class="lazy"></div>
       </div>
-      <div class="card fade-in">
-        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b" alt="Plano VIP">
-        <h3>VIP</h3>
-        <p>Plano completo + Nutricionista</p>
-        <p class="price">R$ 199,90/mês</p>
-        <a href="#contato" class="btn">Assinar</a>
+    </section>
+
+    <a id="backTop" class="back-top" aria-label="Voltar ao topo"><i class="fa fa-chevron-up"></i></a>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Poly Academy</h3>
+        <p>Rua Fictícia, 123 — Centro, São Paulo/SP</p>
+        <p>(11) 99999-9999 • contato@polyacademy.fake</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <nav class="footer-nav">
+          <a href="index.html">Home</a>
+          <a href="pages/about.html">Sobre</a>
+          <a href="pages/planos.html">Planos</a>
+          <a href="pages/aulas.html">Aulas</a>
+          <a href="pages/contato.html">Contato</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Horários</h4>
+        <p>Seg–Sex: 05:00 — 23:00</p>
+        <p>Sáb: 07:00 — 18:00 • Dom: 08:00 — 14:00</p>
       </div>
     </div>
-  </section>
-  
-  <!-- Sobre -->
-  <section id="sobre" class="sobre fade-in">
-    <h2>Sobre a Poly Academy</h2>
-    <div class="sobre-container">
-      <div class="sobre-texto">
-        <p>A Poly Academy é referência em treinos de alta performance e bem-estar. 
-        Aqui você encontra acompanhamento especializado, equipamentos modernos e 
-        um ambiente pensado para motivar você todos os dias.</p>
-      </div>
-      <div class="sobre-imgs">
-        <img src="https://images.unsplash.com/photo-1594737625785-c55dedc1b64c" alt="Treino 1" class="fade-in">
-        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1" alt="Treino 2" class="fade-in">
-      </div>
+    <div class="container copyright">
+      <small>&copy; 2025 Poly Academy — Todos os direitos reservados</small>
     </div>
-  </section>
-  
-
-  <!-- Sobre -->
-  <section id="sobre" class="sobre fade-in">
-    <h2>Sobre a Poly Academy</h2>
-    <div class="sobre-container">
-      <div class="sobre-texto">
-        <p>A Poly Academy é referência em treinos de alta performance e bem-estar. 
-        Aqui você encontra acompanhamento especializado, equipamentos modernos e 
-        um ambiente pensado para motivar você todos os dias.</p>
-      </div>
-      <div class="sobre-imgs">
-        <img src="https://source.unsplash.com/300x200/?training" alt="Treino 1" class="fade-in">
-        <img src="https://source.unsplash.com/300x200/?exercise" alt="Treino 2" class="fade-in">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="contato fade-in">
-    <h2>Fale Conosco</h2>
-    <form id="formContato">
-      <input type="text" placeholder="Seu Nome" required>
-      <input type="email" placeholder="Seu Email" required>
-      <textarea placeholder="Sua Mensagem" required></textarea>
-      <button type="submit" class="btn">Enviar</button>
-    </form>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="fade-in">
-    <p>📍 Rua Fictícia, 123 - Centro, São Paulo/SP</p>
-    <p>📞 (11) 99999-9999</p>
-    <p>&copy; 2025 Poly Academy - Todos os direitos reservados</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
