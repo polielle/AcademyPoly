@@ -1,7 +1,7 @@
 # Poly Academy — Projeto de Site
 
 ## Descrição
-Site fictício de uma academia (Poly Academy) desenvolvido como projeto acadêmico para demonstrar conhecimentos em desenvolvimento web, design responsivo, funcionalidades JavaScript, versionamento e deploy.
+Site fictício de uma academia desenvolvido como projeto acadêmico para demonstrar conhecimentos em desenvolvimento web, design responsivo, funcionalidades JavaScript, versionamento e deploy.
 
 ## Estrutura do projeto
 - `index.html` — página inicial
@@ -19,8 +19,3 @@ Site fictício de uma academia (Poly Academy) desenvolvido como projeto acadêmi
 - Font Awesome (ícones)
 - Vercel (deploy)
 
-## Como executar localmente
-1. Clone o repositório:
-```bash
-git clone https://github.com/SEUUSUARIO/poly-academy.git
-cd poly-academy
