@@ -381,3 +381,7 @@ footer small {
   font-style: italic;
 }
 
+.cards-center {
+  gap: 20px;
+}
+
