@@ -1,6 +1,6 @@
-/* script.js - Poly Academy */
+// Script principal do site Poly Academy
+// Funções: menu mobile, acordeão e interações gerais
 
-/* 1. Mobile menu toggle */
 const menuBtn = document.getElementById('menuBtn');
 const mainNav = document.getElementById('mainNav');
 if(menuBtn && mainNav){
