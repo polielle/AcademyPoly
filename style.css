@@ -1,11 +1,6 @@
-/* =====================================
-   Projeto: Poly Academy
-   Autora: Polielle Meira
-   Descrição: Estilos principais do site
-   ===================================== */
-
-   /* style.css - Poly Academy - preto e roxo minimalista */
-/* reset */
+body {
+  background-color: #fdfdfd;
+}
 *{box-sizing:border-box;margin:0;padding:0}
 :root{
   --bg:#0d0d0d; --panel:#151515; --muted:#a3a3a3; --accent:#a020f0; --accent-2:#7b16b8;
