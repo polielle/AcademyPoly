@@ -1,5 +1,6 @@
 // Script principal do site Poly Academy
 // Funções: menu mobile, acordeão e interações gerais
+console.log("Script carregado com sucesso - Poly Academy");
 
 const menuBtn = document.getElementById('menuBtn');
 const mainNav = document.getElementById('mainNav');
