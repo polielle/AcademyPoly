@@ -19,8 +19,8 @@ Site fictício de uma academia (Poly Academy) desenvolvido como projeto acadêmi
 - Font Awesome (ícones)
 - Vercel (deploy)
 
-## Como executar localmente
-1. Clone o repositório:
-```bash
-git clone https://github.com/SEUUSUARIO/poly-academy.git
-cd poly-academy
+## Versão Final (30/30)
+- Projeto concluído com 30 commits.
+- Responsivo e publicado em [Vercel](https://academy-poly.vercel.app)
+- Desenvolvido por Polielle Meira 💜
+
