@@ -372,3 +372,12 @@ button:hover {
   background-color: #8b2be2;
 }
 
+input:focus, textarea:focus {
+  border-color: #6a0dad;
+  outline: none;
+}
+
+footer small {
+  font-style: italic;
+}
+
