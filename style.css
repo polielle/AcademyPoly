@@ -355,3 +355,8 @@ section {
   margin-bottom: 60px;
 }
 
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
