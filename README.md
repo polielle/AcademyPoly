@@ -22,5 +22,6 @@ Site fictício de uma academia (Poly Academy) desenvolvido como projeto acadêmi
 ## Versão Final (30/30)
 - Projeto concluído com 30 commits.
 - Responsivo e publicado em [Vercel](https://academy-poly.vercel.app)
-- Desenvolvido por Polielle Meira 💜
+- Desenvolvido por Poliele Meira 💜
+
 
