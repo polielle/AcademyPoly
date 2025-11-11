@@ -11,16 +11,10 @@ Site fictício de uma academia (Poly Academy) desenvolvido como projeto acadêmi
 - `pages/contato.html` — contato
 - `style.css` — estilos
 - `script.js` — funcionalidades JS
-- `img/` — pasta para imagens (opcional)
+- `img/` — pasta para imagens
 
 ## Tecnologias
 - HTML5 / CSS3
 - JavaScript (DOM, IntersectionObserver)
 - Font Awesome (ícones)
 - Vercel (deploy)
-
-## Como executar localmente
-1. Clone o repositório:
-```bash
-git clone https://github.com/SEUUSUARIO/poly-academy.git
-cd poly-academy
