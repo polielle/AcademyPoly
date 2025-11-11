@@ -364,3 +364,11 @@ img {
   height: auto;
 }
 
+nav ul {
+  gap: 15px;
+}
+
+button:hover {
+  background-color: #8b2be2;
+}
+
