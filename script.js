@@ -122,3 +122,15 @@ document.querySelectorAll('.accordion-btn').forEach(btn=>{
     if(!open) panel.style.maxHeight = panel.scrollHeight + 'px';
   });
 });
+
+// ===============================
+// MENU RESPONSIVO
+// ===============================
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('nav ul');
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+}
