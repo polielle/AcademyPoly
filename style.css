@@ -359,8 +359,8 @@ a {
   color: #6a0dad;
 }
 
-img:hover {
-  transform: scale(1.03);
-  transition: transform 0.3s ease;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
