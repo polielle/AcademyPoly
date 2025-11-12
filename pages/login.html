@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Poly Academy</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Poly Academy</div>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">Sobre</a></li>
+        <li><a href="aulas.html">Aulas</a></li>
+        <li><a href="planos.html">Planos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html" class="active">Login</a></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <main class="login-page fade-in">
+    <section class="login-container">
+      <h1>Área do Aluno</h1>
+      <p>Faça login para acessar o seu painel de treinos e planos personalizados.</p>
+
+      <form id="loginForm" class="login-form">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+
+        <button type="submit">Entrar</button>
+        <p class="login-msg"></p>
+      </form>
+
+      <p class="register-text">Ainda não tem conta? <a href="#">Cadastre-se</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 Poly Academy</small>
+    </div>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>

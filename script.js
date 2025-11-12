@@ -186,3 +186,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+// =====================
+// Login simples (exemplo local)
+// =====================
+document.addEventListener("DOMContentLoaded", () => {
+  const loginForm = document.getElementById("loginForm");
+  const msg = document.querySelector(".login-msg");
+
+  if (loginForm) {
+    loginForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value.trim();
+
+      // Exemplo básico: login local temporário
+      if (email === "aluno@polyacademy.com" && password === "123456") {
+        msg.textContent = "Login realizado com sucesso!";
+        msg.style.color = "green";
+        setTimeout(() => {
+          window.location.href = "../index.html";
+        }, 1000);
+      } else {
+        msg.textContent = "E-mail ou senha inválidos.";
+        msg.style.color = "red";
+      }
+    });
+  }
+});
