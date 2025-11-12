@@ -135,3 +135,54 @@ if (menuToggle && navMenu) {
     navMenu.classList.toggle('show');
   });
 }
+
+// trecho a ser adicionado ao script.js (ou substitua o handler atual)
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contactForm');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const payload = {
+      name: formData.get('name')?.trim(),
+      email: formData.get('email')?.trim(),
+      phone: formData.get('phone')?.trim(),
+      message: formData.get('message')?.trim()
+    };
+
+    // validações simples
+    if (!payload.name || !payload.email || !payload.message) {
+      alert('Preencha nome, e-mail e mensagem.');
+      return;
+    }
+
+    try {
+      // desativa botão para evitar cliques múltiplos
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = true;
+
+      const resp = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      const data = await resp.json();
+      if (!resp.ok) {
+        console.error(data);
+        alert('Erro ao enviar. Tente novamente mais tarde.');
+      } else {
+        alert('Mensagem enviada com sucesso! Obrigada.');
+        form.reset();
+      }
+    } catch (err) {
+      console.error(err);
+      alert('Erro de rede. Tente novamente mais tarde.');
+    } finally {
+      const btn = form.querySelector('button[type="submit"]');
+      if (btn) btn.disabled = false;
+    }
+  });
+});
